@@ -20,6 +20,18 @@ JkJoke class >> list: anObject [
 	List := anObject
 ]
 
+{ #category : #persistence }
+JkJoke class >> restoreFrom: anObject [
+	
+	List := anObject
+]
+
+{ #category : #persistence }
+JkJoke class >> spData [
+	
+	^ List
+]
+
 { #category : #'as yet unclassified' }
 JkJoke >> displayStringOn: aStream [
 
