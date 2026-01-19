@@ -1,16 +1,18 @@
 Class {
-	#name : #JokesDB,
-	#superclass : #SpFileDatabase,
-	#category : #'Jokes-Persistence'
+	#name : 'JokesDB',
+	#superclass : 'SpFileDatabase',
+	#category : 'Jokes-Persistence',
+	#package : 'Jokes',
+	#tag : 'Persistence'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 JokesDB class >> backupDirectoryParent [
 	
 	^ FileLocator dynabookData
 ]
 
-{ #category : #'loading/saving' }
+{ #category : 'loading/saving' }
 JokesDB class >> schema [
 	^ { 
 		JkJoke }
